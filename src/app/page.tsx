@@ -1,18 +1,8 @@
-import Header from './components/Header';
-import Main from './components/Main';
-import SideNav from './ui/dashboard/sidenav';
-
-export default function Home({ children }: { children: React.ReactNode }) {
+export default function Home() {
   return (
     <>
       <div className="max-w-5xl mx-auto">
-        <Header />
-        <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-          <div className="w-full flex-none md:w-64">
-            <SideNav />
-          </div>
-          <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
-        </div>
+       overview
       </div>
     </>
   );

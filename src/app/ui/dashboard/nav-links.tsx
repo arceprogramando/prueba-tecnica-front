@@ -2,11 +2,11 @@ const links = [
   { name: 'Overview', href: '/overview' },
   {
     name: 'Cylinder Stock',
-    href: '/overview/cilynderstock',
+    href: '/overview',
   },
-  { name: 'Regulators', href: '/overview/regulators' },
-  { name: 'Gas Mixes', href: '/overview/gasmixes' },
-  { name: 'Pallets', href: '/overview/pallets' },
+  { name: 'Regulators', href: '/overview' },
+  { name: 'Gas Mixes', href: '/overview' },
+  { name: 'Pallets', href: '/overview' },
 ];
 
 export default function NavLinks() {

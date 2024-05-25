@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { jetbrains } from './ui/fonts';
+import { inter } from './ui/fonts';
 import SideNav from './ui/dashboard/sidenav';
 import Header from './components/Header';
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetbrains.className} antialised max-w-5xl mx-auto`}>
+      <body className={`${inter.className} antialised max-w-5xl mx-auto`}>
         <Header/>
         <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
           <div className="w-full flex-none md:w-64">

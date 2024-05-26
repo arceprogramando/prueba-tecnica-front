@@ -18,9 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialised  mx-auto`}>
         <Header />
-        <div className="flex flex-col md:flex-row justify-center  max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-center  max-w-7xl mx-auto">
             <SideNav />
-          <div className="flex-grow p-6">{children}</div>
+          <div className="flex-grow">{children}</div>
         </div>
       </body>
     </html>

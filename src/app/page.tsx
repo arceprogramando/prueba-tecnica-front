@@ -31,17 +31,29 @@ const Home: React.FC = () => {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <h2 className="font-bold text-3xl">Cylinder Stock</h2>
-      <div>
-        {Object.entries(data).map(([key, value]) => (
-          <div key={key}>
-            <h3>{key}</h3>
-            <p>Threshold: {value.threshold}</p>
-            <p>Reorder Point: {value.reorderPoint}</p>
-            <p>On Hand: {value.onHand}</p>
-          </div>
-        ))}
-      </div>
+      <h2 className="font-bold text-3xl p-4">Cylinder Stock</h2>
+      <table className="min-w-full table-auto border-collapse ">
+        <thead>
+          <tr className=" rounded-lg">
+            <th className="px-4 py-2 border-b-2 border-t-2 border-l-2">Cylinder Type</th>
+            <th className="px-4 py-2 border-b-2 border-t-2">Threshold</th>
+            <th className="px-4 py-2 border-b-2 border-t-2">Reorder Point</th>
+            <th className="px-4 py-2 border-b-2 border-t-2 ">On Hand</th>
+            <th className="px-4 py-2 border-b-2 border-t-2 border-r-2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.entries(data).map(([key, value], index) => (
+            <tr key={key}>
+              <td className="px-4 py-4 border-b border-l-2">{key}</td>
+              <td className="px-4 py-4 border-b text-[#AEB5BB]">{value.threshold}</td>
+              <td className="px-4 py-4 border-b text-[#AEB5BB]">{value.reorderPoint}</td>
+              <td className="px-4 py-4 border-b text-[#AEB5BB]">{value.onHand}</td>
+              <td className="px-4 py-4 border-b border-r-2 text-[#8B9093] text-medium font-semibold">Edit Threshold</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

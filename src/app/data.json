@@ -1,0 +1,152 @@
+{
+  "CO2": {
+    "threshold": 4,
+    "reorderPoint": 8,
+    "onHand": 6
+  },
+  "Argon": {
+    "threshold": 3,
+    "reorderPoint": 9,
+    "onHand": 7
+  },
+  "Nitrogen": {
+    "threshold": 5,
+    "reorderPoint": 6,
+    "onHand": 5
+  },
+  "Oxygen": {
+    "threshold": 2,
+    "reorderPoint": 7,
+    "onHand": 8
+  },
+  "Acetylene": {
+    "threshold": 6,
+    "reorderPoint": 5,
+    "onHand": 4
+  },
+  "Helium": {
+    "threshold": 4,
+    "reorderPoint": 8,
+    "onHand": 6
+  },
+  "Hydrogen": {
+    "threshold": 3,
+    "reorderPoint": 9,
+    "onHand": 7
+  },
+  "Methane": {
+    "threshold": 5,
+    "reorderPoint": 6,
+    "onHand": 5
+  },
+  "Propane": {
+    "threshold": 2,
+    "reorderPoint": 7,
+    "onHand": 8
+  },
+  "Butane": {
+    "threshold": 6,
+    "reorderPoint": 8,
+    "onHand": 4
+  },
+  "Neon": {
+    "threshold": 4,
+    "reorderPoint": 7,
+    "onHand": 5
+  },
+  "Xenon": {
+    "threshold": 2,
+    "reorderPoint": 5,
+    "onHand": 3
+  },
+  "Krypton": {
+    "threshold": 3,
+    "reorderPoint": 8,
+    "onHand": 6
+  },
+  "Radon": {
+    "threshold": 5,
+    "reorderPoint": 7,
+    "onHand": 5
+  },
+  "Fluorine": {
+    "threshold": 6,
+    "reorderPoint": 9,
+    "onHand": 4
+  },
+  "Chlorine": {
+    "threshold": 3,
+    "reorderPoint": 6,
+    "onHand": 7
+  },
+  "Bromine": {
+    "threshold": 4,
+    "reorderPoint": 7,
+    "onHand": 5
+  },
+  "Iodine": {
+    "threshold": 5,
+    "reorderPoint": 8,
+    "onHand": 6
+  },
+  "Ammonia": {
+    "threshold": 2,
+    "reorderPoint": 6,
+    "onHand": 4
+  },
+  "Ethylene": {
+    "threshold": 3,
+    "reorderPoint": 7,
+    "onHand": 5
+  },
+  "SulfurDioxide": {
+    "threshold": 4,
+    "reorderPoint": 9,
+    "onHand": 7
+  },
+  "Phosphine": {
+    "threshold": 5,
+    "reorderPoint": 8,
+    "onHand": 6
+  },
+  "Silane": {
+    "threshold": 2,
+    "reorderPoint": 5,
+    "onHand": 3
+  },
+  "Diborane": {
+    "threshold": 3,
+    "reorderPoint": 6,
+    "onHand": 4
+  },
+  "Tetrafluoromethane": {
+    "threshold": 6,
+    "reorderPoint": 9,
+    "onHand": 5
+  },
+  "Hexafluoroethane": {
+    "threshold": 4,
+    "reorderPoint": 7,
+    "onHand": 6
+  },
+  "Octafluoropropane": {
+    "threshold": 3,
+    "reorderPoint": 8,
+    "onHand": 5
+  },
+  "SulfurHexafluoride": {
+    "threshold": 2,
+    "reorderPoint": 6,
+    "onHand": 4
+  },
+  "NitrousOxide": {
+    "threshold": 5,
+    "reorderPoint": 9,
+    "onHand": 7
+  },
+  "NitricOxide": {
+    "threshold": 3,
+    "reorderPoint": 7,
+    "onHand": 6
+  }
+}

@@ -19,7 +19,7 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'flex h-[48px] grow items-center justify-center gap-2 rounded-md  p-3 text-sm font-medium hover:bg-[#eeebeb] md:flex-none md:justify-start md:p-2 md:px-3',
+              'flex h-[48px] grow items-center justify-center gap-2 rounded-md  p-3 text-sm font-medium hover:bg-[#eeebeb] md:min-w-60 md:justify-start md:p-2 md:px-3',
               {
                 'bg-[#F1F2F6] ': link.name === 'Cylinder Stock',
               },

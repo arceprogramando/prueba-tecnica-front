@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { fetchData } from './lib/data';
+import Image from 'next/image';
 
 interface GasData {
   threshold: number;
@@ -31,29 +32,42 @@ const Home: React.FC = () => {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <h2 className="font-bold text-3xl p-4">Cylinder Stock</h2>
-      <table className="min-w-full table-auto border-collapse ">
-        <thead>
-          <tr className=" rounded-lg">
-            <th className="px-4 py-2 border-b-2 border-t-2 border-l-2">Cylinder Type</th>
-            <th className="px-4 py-2 border-b-2 border-t-2">Threshold</th>
-            <th className="px-4 py-2 border-b-2 border-t-2">Reorder Point</th>
-            <th className="px-4 py-2 border-b-2 border-t-2 ">On Hand</th>
-            <th className="px-4 py-2 border-b-2 border-t-2 border-r-2"></th>
-          </tr>
-        </thead>
-        <tbody>
-          {Object.entries(data).map(([key, value], index) => (
-            <tr key={key}>
-              <td className="px-4 py-4 border-b border-l-2">{key}</td>
-              <td className="px-4 py-4 border-b text-[#AEB5BB]">{value.threshold}</td>
-              <td className="px-4 py-4 border-b text-[#AEB5BB]">{value.reorderPoint}</td>
-              <td className="px-4 py-4 border-b text-[#AEB5BB]">{value.onHand}</td>
-              <td className="px-4 py-4 border-b border-r-2 text-[#8B9093] text-medium font-semibold">Edit Threshold</td>
+      <div>
+        <h2 className="font-bold text-3xl mb-4">Cylinder Stock</h2>
+        <p className="text-[#929A9D] mb-4">Showing 1-20 of 40 results</p>
+        <label className="block w-full my-4">
+          <div className="flex items-center bg-[#F1F2F6] border rounded  shadow-md">
+            <div className="pl-4">
+              <Image src="/lupa.svg" height={16} width={16} alt={'logo'} />
+            </div>
+            <input type="text" className="flex-grow bg-transparent py-2 pl-2 focus:outline-none" placeholder=" Search for a cylinder type" />
+          </div>
+        </label>
+      </div>
+      <div className=" rounded shadow-lg ">
+        <table className="md:w-full  border-spacing-0 rounded">
+          <thead>
+            <tr>
+              <th className="pl-4 text-start py-2 border-b-2 border-t-2 border-l-2">Cylinder Type</th>
+              <th className="pr-4 py-2 border-b-2 border-t-2">Threshold</th>
+              <th className="pr-4 py-2 border-b-2 border-t-2">Reorder Point</th>
+              <th className="pr-4 py-2 border-b-2 border-t-2 ">On Hand</th>
+              <th className="pr-4 py-2 border-b-2 border-t-2 border-r-2"></th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {Object.entries(data).map(([key, value], index) => (
+              <tr key={key}>
+                <td className="px-4 py-4 border-b border-l-2">{key}</td>
+                <td className="px-4 py-4 border-b text-[#AEB5BB]">{value.threshold}</td>
+                <td className="px-4 py-4 border-b text-[#AEB5BB]">{value.reorderPoint}</td>
+                <td className="px-4 py-4 border-b text-[#AEB5BB]">{value.onHand}</td>
+                <td className="px-4 py-4 border-b border-r-2 text-[#8B9093] text-medium font-semibold">Edit Threshold</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
